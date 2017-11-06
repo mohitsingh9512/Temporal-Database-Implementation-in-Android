@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.singh9512gmail.mohit.criminalrecord.Controller.SearchActivity">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Record"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Name  "/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_weight="2"
+
+            android:id="@+id/name_tv_search"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_marginLeft="10dp"
+            android:text="GO"
+            android:id="@+id/search_btn"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="320dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:gravity="left|center"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/name_tv"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:gravity="center"
+            android:text="Address"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/name_tv"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/address_tv" />
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:gravity="right|center"
+            android:text="valid-from"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_toRightOf="@id/address_tv"
+            android:id="@+id/valid_from_tv" />
+        <TextView
+            android:layout_width="105dp"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:textStyle="bold"
+            android:text="valid-to"
+            android:layout_toRightOf="@id/valid_from_tv"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/valid_to_tv" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/list_search"
+        >
+    </ListView>
+</LinearLayout>

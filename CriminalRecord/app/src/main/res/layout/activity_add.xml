@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="50dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/name_et"
+        android:paddingLeft="5dp"
+        android:hint="Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/address_et"
+        android:paddingLeft="5dp"
+        android:hint="Address"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/date_et"
+        android:paddingLeft="5dp"
+        android:hint="Date"/>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:id="@+id/add_btn"
+        android:text="Add" />
+
+</LinearLayout>
